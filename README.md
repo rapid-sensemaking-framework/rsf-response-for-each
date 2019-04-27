@@ -17,6 +17,7 @@ How it works:
 - rules will be given to the participants
 - options and how to use them will be given
 - each participant will be sent each statement one by one, asking for a response, and only sending the next one once a valid response to the current one has been received
+- each statement will also include how many remaining statements there are to respond to
 - will complete will everyone has responded to everything, or the timeout `maxTime` comes to pass, in which case it will finish with whatever results have been given so far
 
 `options` : `[Option]`, the available response options

@@ -59,6 +59,9 @@ const rsfResponseForEach = (options, statements, maxTime, contactables, callback
         // send them one message per statement,
         // awaiting their response before sending the next
         let responseCount = 0
+        const nextText = () => {
+            return `(${statements.length - responseCount} remaining) ${statements[responseCount].text}`
+        }
         contactable.listen(text => {
 
             // do we still accept this response?
@@ -82,14 +85,14 @@ const rsfResponseForEach = (options, statements, maxTime, contactables, callback
             } else {
                 // still haven't reached the end,
                 // so send the next one
-                contactable.speak(statements[responseCount].text)
+                contactable.speak(nextText())
             }
 
             // are we done?
             checkCompletionCondition()
         })
         // send the first one
-        contactable.speak(statements[responseCount].text)
+        contactable.speak(nextText())
     })
 }
 module.exports.rsfResponseForEach = rsfResponseForEach
