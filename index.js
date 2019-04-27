@@ -60,7 +60,7 @@ const rsfResponseForEach = (options, statements, maxTime, contactables, callback
         // awaiting their response before sending the next
         let responseCount = 0
         const nextText = () => {
-            return `(${statements.length - responseCount} remaining) ${statements[responseCount].text}`
+            return `(${statements.length - 1 - responseCount} remaining) ${statements[responseCount].text}`
         }
         contactable.listen(text => {
 
