@@ -10,6 +10,9 @@ const giveOptionsText = (options) => {
     return `The options for each statement are: ${options.map(o => `${o.text} (${o.triggers.join(', ')})`).join(', ')}`
 }
 
+// use of this trigger will allow any response to match
+const WILDCARD_TRIGGER = '*'
+
 const rsfResponseForEach = (options, statements, maxTime, contactables, callback) => {
     // array to store the results
     const results = []
@@ -36,7 +39,7 @@ const rsfResponseForEach = (options, statements, maxTime, contactables, callback
     // according to the options
     const validResponse = (text) => {
         return options.find(option => {
-            return option.triggers.find(trigger => trigger === text)
+            return option.triggers.find(trigger => trigger === text || trigger === WILDCARD_TRIGGER)
         })
     }
 
