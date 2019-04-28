@@ -76,7 +76,8 @@ const rsfResponseForEach = (options, statements, maxTime, contactables, callback
                 results.push({
                     statement: statements[responseCount],
                     response: text,
-                    id: contactable.id
+                    id: contactable.id,
+                    timestamp: Date.now()
                 })
                 responseCount++
             }

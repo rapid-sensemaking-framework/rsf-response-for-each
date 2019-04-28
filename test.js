@@ -50,4 +50,6 @@ describe('#rsfResponseForEach', () => {
     // TODO: invalid responses
 
     // TODO: rules and context
+
+    // TODO: wildcard trigger
 })
