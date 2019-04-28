@@ -27,7 +27,7 @@ const WILDCARD_TRIGGER = '*'
 // gives
 // results : [Response], array of the responses collected
 // Response.statement : Statement, the same as the Statement objects given
-// Response.text : String, the text of the response
+// Response.response : String, the text of the response
 // Response.id : String, the id of the agent who gave the response
 // Response.timestamp : Number, the unix timestamp of the moment the message was received
 const rsfResponseForEach = (options, statements, maxTime, contactables, callback) => {
