@@ -44,6 +44,8 @@ How it works:
 
 `Response.id` : `String`, the id of the agent who gave the response
 
+`Response.timestamp` : `Number`, the unix timestamp of the moment the response message was received
+
 
 ### `main(readWriteDir)`
 
