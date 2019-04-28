@@ -13,6 +13,23 @@ const giveOptionsText = (options) => {
 // use of this trigger will allow any response to match
 const WILDCARD_TRIGGER = '*'
 
+
+// needs
+// options : [Option], the available response options
+// Option.text : String, the human readable meaning of this response, such as 'Agree'
+// Options.triggers : [String], valid strings that will represent the selection of this option, such as `['a', 'A', 'agree']`, '*' will match any response
+// statements : [Statement], the statements to collect responses to. `Statement` is an object because it could optionally have an `id` property signifying the person who authored it
+// Statement.text : String, the text of this statement to give to partipants for responding to.
+// maxTime : Number, the number of milliseconds to wait until stopping this process automatically
+// contactables: [Contactable], the "contactables" array from `rsf-contactable`, or a mock... objects with `.speak` and `.listen` methods.
+// callback : Function, a callback to call with only one argument which are the results
+
+// gives
+// results : [Response], array of the responses collected
+// Response.statement : Statement, the same as the Statement objects given
+// Response.text : String, the text of the response
+// Response.id : String, the id of the agent who gave the response
+// Response.timestamp : Number, the unix timestamp of the moment the message was received
 const rsfResponseForEach = (options, statements, maxTime, contactables, callback) => {
     // array to store the results
     const results = []

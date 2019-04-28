@@ -24,7 +24,7 @@ How it works:
 
 `Option.text` : `String`, the human readable meaning of this response, such as 'Agree'
 
-`Options.triggers` : `[String]`, valid strings that will represent the selection of this option, such as `['a', 'A', 'agree']`
+`Options.triggers` : `[String]`, valid strings that will represent the selection of this option, such as `['a', 'A', 'agree']`, `*` will match any response
 
 `statements` : `[Statement]`, the statements to collect responses to. `Statement` is an object because it could optionally have an `id` property signifying the person who authored it
 
