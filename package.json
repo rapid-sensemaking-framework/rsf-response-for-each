@@ -1,7 +1,7 @@
 {
   "name": "rsf-response-for-each",
-  "version": "0.0.18",
-  "description": "",
+  "version": "0.0.19",
+  "description": "for a list/array of statements, collect a response or vote for each from a list of participants",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
