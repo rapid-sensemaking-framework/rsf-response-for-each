@@ -1,6 +1,11 @@
 # rsf-response-for-each
 
-for a list/array of statements, collect a response or vote for each from a list of participants
+`rsf-response-for-each` is part of the Rapid Sensemaking Framework ecosystem... please read
+the [README of rsf-runner](https://github.com/rapid-sensemaking-framework/rsf-runner/blob/master/README.md) for the full context for what that is.
+
+`rsf-response-for-each` is an [RSF Operator](https://github.com/rapid-sensemaking-framework/rsf-runner#rsf-operators)
+
+For a list/array of statements, collect a response or vote for each from a list of participants
 
 ## Installation
 ```
