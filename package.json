@@ -1,14 +1,14 @@
 {
   "name": "rsf-response-for-each",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "for a list/array of statements, collect a response or vote for each from a list of participants",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/rapid-sensemaking-framework/rsf-response-for-each.git"
+    "type": "git",
+    "url": "https://github.com/rapid-sensemaking-framework/rsf-response-for-each.git"
   },
   "author": "",
   "license": "GPL-3.0",
@@ -18,7 +18,7 @@
     "sinon": "^7.3.2"
   },
   "dependencies": {
-    "rsf-contactable": "0.0.4",
+    "rsf-contactable": "0.0.6",
     "rsf-reader-writer": "0.0.1"
   }
 }

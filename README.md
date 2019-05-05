@@ -48,7 +48,7 @@ The following could be used in an [RSF Sequence](https://github.com/rapid-sensem
     },
     "dependencies_file": {
         "dependencies": {
-            "rsf-response-for-each": "^0.0.19"
+            "rsf-response-for-each": "^0.0.20"
         }
     },
     "code_file": "require('rsf-response-for-each').main(__dirname)"
