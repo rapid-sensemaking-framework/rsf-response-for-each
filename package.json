@@ -1,6 +1,6 @@
 {
   "name": "rsf-response-for-each",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "for a list/array of statements, collect a response or vote for each from a list of participants",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "sinon": "^7.3.2"
   },
   "dependencies": {
-    "rsf-contactable": "0.0.6",
+    "rsf-contactable": "0.0.7",
     "rsf-reader-writer": "0.0.1"
   }
 }
